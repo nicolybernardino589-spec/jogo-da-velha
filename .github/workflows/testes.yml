@@ -1,0 +1,19 @@
+name: Testes Jogo da Velha
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+
+      - name: Compilar testes
+        run: gcc test_jogo-da-velha.c functions_jogo-da-velha.c -o teste
+
+      - name: Executar testes
+        run: ./teste
