@@ -11,12 +11,11 @@ int main()
         {' ',' ',' '}
     };
 
-  
+   
 
     tab[0][0]='X';
 
-   
-
+  
     char vencedor[3][3] =
     {
         {'X','X','X'},
@@ -24,8 +23,7 @@ int main()
         {' ',' ',' '}
     };
 
-   
-
+    
     char cheio[3][3] =
     {
         {'X','O','X'},
@@ -33,7 +31,7 @@ int main()
         {'O','X','O'}
     };
 
-   
+    
 
     printf("Todos os testes passaram!\n");
     printf("Criado por Nicoly Bernardino\n");
